@@ -1,4 +1,5 @@
 require 'nngraph'
+require '../modules/Gaussian'
 
 local Model = {
   zSize = 100 -- Size of isotropic multivariate Gaussian Z
