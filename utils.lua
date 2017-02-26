@@ -24,6 +24,14 @@ function utils.loadImagePairs(imageIndex, synthsizedIndex)
 		image.load(synthesizedImagePath, NUM_CHANNEL, 'byte')
 end
 
+function utils.imageCatH(image1, image2)
+	return torch.cat(image1, image2, 3)
+end
+
+function utils.imageCatV(image1, image2)
+	return torch.cat(image1, image2, 2)
+end
+
 return utils
 
 -- ()()

@@ -6,8 +6,10 @@ local display = require 'display'  -- need to 'luarocks install https://raw.gith
 -- utils.loadImagePairs(0)
 
 local realImage, synthImage = utils.loadImagePairs(0, 0)
-display.image(realImage)
-display.image(synthImage)
+-- display.image(realImage)
+-- display.image(synthImage)
+local imageCat = utils.imageCatH(realImage, synthImage)
+display.image(imageCat)
 
 
 -- ()()
