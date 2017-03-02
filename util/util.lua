@@ -259,7 +259,12 @@ function util.cudnn(net)
 	return cudnn_convert_custom(net, cudnn)
 end
 
-
+function util.containsValue(table, value)
+  for k, v in pairs(table) do 
+    if v == value then return true end
+  end
+  return false
+end
 
 
 
